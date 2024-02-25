@@ -1,0 +1,40 @@
+<div class="container">
+    <h1>Usuario</h1>
+    <div class="usuario1">
+        <div class="usuario2">
+            <label for="nombre" class="form-label">Nombre </label>
+            <input type="text" class="form-control" id="nombre" [(ngModel)]='nombre'><br/><br/>
+            <label for="apellido" class="form-label">Apellido </label>
+            <input type="text" class="form-control" id="apellido" [(ngModel)]='apellido'>
+        </div>
+    </div>
+    <p>Usuario</p>
+    <div class="usuario">
+      {{nombre}} {{apellido}}
+    </div>
+    <h1>Calculadora</h1>
+    <br/>
+        <div class="calculadora1">
+            <div class="calculadora2">
+                <label for="numero1" class="form-label">Primer número </label>
+                <input type="text" class="form-control" id="numero1" [(ngModel)]='numero1'><br/><br/>
+                <label for="numero2" class="form-label">Segundo número </label>
+                <input type="text" class="form-control" id="numero2" [(ngModel)]='numero2'>
+            </div>
+        </div>
+        <button type="button" class="btn" (click)="sumar()">+</button>
+        <button type="button" class="btn" (click)="restar()">-</button>
+        <button type="button" class="btn" (click)="multiplicar()">x</button>
+        <button type="button" class="btn" (click)="dividir()">/</button>
+    <br/>
+    <p>Resultado</p>
+    <div class="resultado">
+      {{mostrar}}
+    </div>
+    
+    
+
+
+    
+</div>
+

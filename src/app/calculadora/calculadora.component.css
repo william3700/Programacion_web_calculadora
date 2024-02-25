@@ -1,0 +1,26 @@
+.btn{
+    width: 35px;
+    height: 35px;
+    font-size: 25px;
+    margin: 5px;
+    background-color: aquamarine;
+    border-radius: 5px;
+}
+
+.usuario{
+    border: 1px solid black;
+    width: 50%;
+    height: 30px;
+    text-align: center;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.resultado{
+    border: 1px solid black;
+    width: 50%;
+    height: 30px;
+    text-align: center;
+    margin: 10px;
+    font-size: 20px;
+}
