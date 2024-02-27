@@ -190,9 +190,9 @@ resultadoExpresion(){
     }
   }else{
     if(this.bandera2==1){
-       this.resultado=eval(((((((((this.numero1.replace("E",'10**')).replace("log(", 'Math.log10(')).replace("^", '**')).replace("π",'Math.PI')).replace("%",'/100')).replace("√(",'Math.sqrt(').replace("sin(",'Math.sin(')).replace("cos(",'Math.cos(')).replace("tan(",'Math.tan(')).replace("ln(",'Math.log('));
+       this.resultado=eval(((((((((this.numero1.replace("E",'*10**')).replace("log(", 'Math.log10(')).replace("^", '**')).replace("π",'Math.PI')).replace("%",'/100')).replace("√(",'Math.sqrt(').replace("sin(",'Math.sin(')).replace("cos(",'Math.cos(')).replace("tan(",'Math.tan(')).replace("ln(",'Math.log('));
     }else{
-      this.resultado=eval(((((((((this.numero1.replace("E",'10**')).replace("log(", 'Math.log10(')).replace("^", '**')).replace("π",'Math.PI')).replace("%",'/100')).replace("√(",'Math.sqrt(').replace("asin(",'Math.asin(')).replace("acos(",'Math.acos(')).replace("atan(",'Math.atan(')).replace("ln(",'Math.log('));    
+      this.resultado=eval(((((((((this.numero1.replace("E",'*10**')).replace("log(", 'Math.log10(')).replace("^", '**')).replace("π",'Math.PI')).replace("%",'/100')).replace("√(",'Math.sqrt(').replace("asin(",'Math.asin(')).replace("acos(",'Math.acos(')).replace("atan(",'Math.atan(')).replace("ln(",'Math.log('));    
     }       
   }
   this.numero2=(this.resultado.toString());
