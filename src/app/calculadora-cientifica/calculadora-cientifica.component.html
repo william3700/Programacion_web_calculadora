@@ -1,0 +1,57 @@
+<div class="encabezado">
+    <h2>Calculadora científica</h2>
+</div>
+
+<div id="ventanaUsuario">
+    <input type="text" id="ventana" [(ngModel)]='numero1' value="{{resultado}}" placeholder="0">
+</div>
+
+<div id="Botones">
+    <table>
+        <tr>
+            <th><button type="button" class="btn" (click)="radianes()">Rad</button></th>
+            <th><button type="button" class="btn" (click)="grado()">Deg</button></th>
+            <th><button type="button" class="btn" (click)="factorial()">x!</button></th>
+            <th><button type="button" class="btn" (click)="parentesisIzquierdo()">(</button></th>
+            <th><button type="button" class="btn" (click)="parentesisDerecho()">)</button></th>
+            <th><button type="button" class="btn" (click)="porcentaje()">%</button></th>
+            <th><button type="button" class="btn" (click)="limpiar()">CE</button></th>
+          </tr>
+        <tr>
+          <th><button type="button" class="btn" (click)="inversas()">inv</button></th>
+          <th><button type="button" class="btn" (click)="seno()">{{botonSeno}}</button></th>
+          <th><button type="button" class="btn" (click)="logaritmoNatural()">Ln</button></th>
+          <th><button type="button" class="btn" (click)="concatenar7()">7</button></th>
+          <th><button type="button" class="btn" (click)="concatenar8()">8</button></th>
+          <th><button type="button" class="btn" (click)="concatenar9()">9</button></th>
+          <th><button type="button" class="btn" (click)="division()">/</button></th>
+        </tr>
+        <tr>
+            <th><button type="button" class="btn" (click)="numeroPi()">π</button></th>
+            <th><button type="button" class="btn" (click)="coseno()">{{botonCos}}</button></th>
+            <th><button type="button" class="btn" (click)="logaritmoNatural10()">Log</button></th>
+            <th><button type="button" class="btn" (click)="concatenar4()">4</button></th>
+            <th><button type="button" class="btn" (click)="concatenar5()">5</button></th>
+            <th><button type="button" class="btn" (click)="concatenar6()">6</button></th>
+            <th><button type="button" class="btn" (click)="multiplicacion()">x</button></th>
+        </tr>
+        <tr>
+            <th><button type="button" class="btn" (click)="numeroE()">e</button></th>
+            <th><button type="button" class="btn" (click)="tangente()">{{botonTan}}</button></th>
+            <th><button type="button" class="btn" (click)="raizCuadrada()">√</button></th>
+            <th><button type="button" class="btn" (click)="concatenar1()">1</button></th>
+            <th><button type="button" class="btn" (click)="concatenar2()">2</button></th>
+            <th><button type="button" class="btn" (click)="concatenar3()">3</button></th>
+            <th><button type="button" class="btn" (click)="resta()">-</button></th>
+        </tr>
+        <tr>
+            <th><button type="button" class="btn" (click)="guardarResultadoAnterior()">ANS</button></th>
+            <th><button type="button" class="btn" (click)="factorEXP()">EXP</button></th>
+            <th><button type="button" class="btn" (click)="potencia()">x<sup>y</sup></button></th>
+            <th><button type="button" class="btn" (click)="concatenar0()">0</button></th>
+            <th><button type="button" class="btn" (click)="concatenarPunto()">.</button></th>
+            <th><button type="button" class="btn" (click)="resultadoExpresion()">=</button></th>
+            <th><button type="button" class="btn" (click)="suma()">+</button></th>
+        </tr>        
+      </table>
+</div>
